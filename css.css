@@ -1,0 +1,72 @@
+body {
+  margin: 5;
+  padding: 5;
+  font-family: "Arial", sans;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #444444;
+}
+
+.box {
+  height: 30px;
+  width: 50px;
+  background-color: #555;
+  display: table-cell;
+}
+
+@keyframes correct {
+  0% {
+    margin-top: 10px;
+    opacity: 1;
+    text-shadow: 0 0 0px green;
+  }
+  20% {
+    margin-top: 10px;
+    opacity: 1;
+    text-shadow: 0 0 7px green;
+  }
+  100% {
+    margin-top: 30px;
+    opacity: 0;
+    text-shadow: 0 0 0px green;
+  }
+}
+
+@keyframes incorrect {
+  0% {
+    margin-top: 10px;
+    opacity: 1;
+    text-shadow: 0 0 0px red;
+  }
+  20% {
+    margin-top: 10px;
+    opacity: 1;
+    text-shadow: 0 0 7px red;
+  }
+  100% {
+    margin-top: 30px;
+    opacity: 0;
+    text-shadow: 0 0 0px red;
+  }
+}
+
+
+p {
+  animation-duration: 2s;
+}
+
+.incorrect {
+  color: red;
+  animation-name: incorrect;
+}
+
+.correct {
+  color: green;
+  animation-name: correct;
+}
+
+.authors {
+  margin-left: 5px;
+  color: #555555;
+}

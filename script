@@ -1,0 +1,12 @@
+function testText(a) {
+  let result;
+  if (a = 'абоба') {
+    result = 'positive';
+  } else {
+    result = 'NOT positive';
+  }
+  return result;
+}
+
+console.log(testText(document.getElementById('1quest').value ));
+document.getElementById('1quest').value 
